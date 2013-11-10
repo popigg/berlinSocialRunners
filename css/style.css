@@ -1,6 +1,6 @@
 body {
     background-color: #424242;
-    color: #ffffff;
+    color: #ffffff;                
 }
 
 a:hover {
@@ -12,57 +12,102 @@ a:hover {
     margin-top: 20px;
 }
 
-.navbar-inverse .brand {
-    color: #FA5858;
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 25px;
+.navbar-inverse .brand, .navbar-inverse .brand:hover {
+    color: #FA5858;    
+    font-family: StaticFont;
+    font-size: 31px;
+    margin-top: 10px;
 }
 
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
     -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .navbar-inverse .navbar-inner {
-  background-color: #424242;
-  background-image: none;
-  border-color: #424242;
-}
-
-.cta-group {
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-.newsletter-form {
-    float: left;
-    margin-top: 10px;
-    margin-left: 100px;
-    margin-right: 230px;
+    background-color: #424242;
+    background-image: none;
+    border-color: #424242;
 }
 
 a.fb-home {
-
+    float:right;
 }
 
 .img-fb-home {
-    width: 110px;
+    width: 50px;
+}
+
+.newsletter span {
+    padding-top: 10px;
+    font-family: StaticFont;
+    font-size: 18px;      
+}
+
+.newsletterInput {    
+    margin-bottom: 0px !important;
+    height: 32px !important;
+    font-size: 18px !important;
+    font-family: StaticFont;
+}
+
+.newsletterSubmit, .newsletterSubmit:hover  {
+    background-image: none;
+    background-color: #FA5858; 
+    border: #FA5858;
+    color: #424242;    
+    width: 118px !important;
+    height: 41px;
+    text-shadow: none;
+    font-size: 18px;
+    font-family: StaticFont;
 }
 
 a.accordion-toggle {
-  color: #A4A4A4;
-  font-size: 14px;
+    color: #A4A4A4;
+    font-size: 20px;
+    font-family: StaticFont;
 }
 
 .img-circle-home {
-  width: 55px;
-  background-color: grey;
-  margin-right: 20px;
+    width: 55px;
+    background-color: grey;
+    margin-right: 20px;
 }
 
 .accordion-group {
-  border: 1px solid #1C1C1C;
-  background-color: #1C1C1C;
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
 }
+
+footer {
+    font-family: StaticFont;
+    font-size: 18px;
+}
+
+@font-face {
+      font-family: "StaticFont";
+      src: url("../css/font/static/Static.otf");
+}
+@font-face { 
+    font-family: StaticFont; 
+    font-weight: bold; 
+    src: url("../css/font/static/StaticBold.otf"); 
+}
+@font-face { 
+    font-family: StaticFont; 
+    font-style: italic; 
+    src: url("../css/font/static/StaticItalic.otf"); 
+}
+@font-face { 
+    font-family: StaticFont; 
+    font-weight: bold;
+    font-style: italic; 
+    src: url("../css/font/static/StaticItalicBold.otf"); 
+}
+
+
+
+
