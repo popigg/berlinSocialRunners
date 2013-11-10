@@ -1,0 +1,68 @@
+body {
+    background-color: #424242;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-inverse {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.navbar-inverse .brand {
+    color: #FA5858;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-size: 25px;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+    -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-inverse .navbar-inner {
+  background-color: #424242;
+  background-image: none;
+  border-color: #424242;
+}
+
+.cta-group {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.newsletter-form {
+    float: left;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 230px;
+}
+
+a.fb-home {
+
+}
+
+.img-fb-home {
+    width: 110px;
+}
+
+a.accordion-toggle {
+  color: #A4A4A4;
+  font-size: 14px;
+}
+
+.img-circle-home {
+  width: 55px;
+  background-color: grey;
+  margin-right: 20px;
+}
+
+.accordion-group {
+  border: 1px solid #1C1C1C;
+  background-color: #1C1C1C;
+}
