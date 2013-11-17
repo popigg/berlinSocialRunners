@@ -1,6 +1,8 @@
 body {
-    background-color: #424242;
+    background-color: #292C32;
     color: #ffffff;                
+    font-family: StaticFont;
+    font-size: 20px;
 }
 
 a:hover {
@@ -13,10 +15,10 @@ a:hover {
 }
 
 .navbar-inverse .brand, .navbar-inverse .brand:hover {
-    color: #FA5858;    
-    font-family: StaticFont;
-    font-size: 31px;
+    color: #FA5858;        
+    font-size: 40px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .navbar-fixed-top .navbar-inner,
@@ -27,23 +29,29 @@ a:hover {
 }
 
 .navbar-inverse .navbar-inner {
-    background-color: #424242;
+    background-color: #292C32;
     background-image: none;
-    border-color: #424242;
+    border-color: #292C32;
 }
 
-a.fb-home {
+.social-home {
     float:right;
 }
 
-.img-fb-home {
-    width: 50px;
+.social-home span{
+    margin-right: 18px;
+}
+
+.img-social-home {
+    width: 60px;
+}
+
+.carousel-control {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .newsletter span {
     padding-top: 10px;
-    font-family: StaticFont;
-    font-size: 18px;      
 }
 
 .newsletterInput {    
@@ -57,9 +65,9 @@ a.fb-home {
     background-image: none;
     background-color: #FA5858; 
     border: #FA5858;
-    color: #424242;    
+    color: #292C32;    
     width: 118px !important;
-    height: 41px;
+    height: 42px;
     text-shadow: none;
     font-size: 18px;
     font-family: StaticFont;
@@ -68,7 +76,6 @@ a.fb-home {
 a.accordion-toggle {
     color: #A4A4A4;
     font-size: 20px;
-    font-family: StaticFont;
 }
 
 .img-circle-home {
@@ -82,9 +89,22 @@ a.accordion-toggle {
     background-color: #1C1C1C;
 }
 
-footer {
-    font-family: StaticFont;
-    font-size: 18px;
+.accordion-inner {
+    color:#000000;
+    background-color: #ffffff;
+    padding: 0px;
+}
+
+.accordion-inner img {            
+    margin-bottom: 20px;
+}
+
+.accordion-inner div {
+    padding-bottom: 15px;
+}
+
+.accordion-inner h3, .accordion-inner ul {
+    margin-left: 200px;        
 }
 
 @font-face {
@@ -106,6 +126,11 @@ footer {
     font-weight: bold;
     font-style: italic; 
     src: url("../css/font/static/StaticItalicBold.otf"); 
+}
+
+@font-face {
+      font-family: "BebasNeue";
+      src: url("../css/font/bebasNeue/BebasNeue.otf");
 }
 
 
