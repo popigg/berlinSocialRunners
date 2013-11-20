@@ -103,8 +103,13 @@ a.accordion-toggle {
     padding-bottom: 15px;
 }
 
-.accordion-inner h3, .accordion-inner ul {
+.accordion-inner ul {
     margin-left: 200px;        
+}
+
+.accordion-inner h3, .accordion-inner p {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 @font-face {
