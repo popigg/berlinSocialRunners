@@ -17,7 +17,7 @@ a:hover {
 .navbar-inverse .brand, .navbar-inverse .brand:hover {
     color: #FA5858;        
     font-size: 40px;
-    margin-top: 10px;
+    margin-top: 14px;
     font-weight: bold;
 }
 
@@ -132,12 +132,3 @@ a.accordion-toggle {
     font-style: italic; 
     src: url("../css/font/static/StaticItalicBold.otf"); 
 }
-
-@font-face {
-      font-family: "BebasNeue";
-      src: url("../css/font/bebasNeue/BebasNeue.otf");
-}
-
-
-
-
