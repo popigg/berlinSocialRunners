@@ -1,0 +1,29 @@
+{
+  "name": "berlinSocialRunners",
+  "version": "0.0.1",
+  "homepage": "berlinsocialrunners.com",
+  "authors": [
+    "Pablo Gomez Guerrero"
+  ],
+  "description": "berlin social runners dependencies",
+  "main": "index.html",
+  "keywords": [
+    "berlin",
+    "social",
+    "run",
+    "sport"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.9",
+    "bootstrap": "~3.0.3",
+    "handlebars": "~1.3.0"
+  }
+}
