@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8">        
         <title>Berlin Social Runners</title>
 
         <!--  styles -->
-       <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">                           
-       <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css"> 
-       <link rel="stylesheet" type="text/css" href="css/style.css">    
-       <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">  
-
-      <!-- Scripts -->
-      <script src="jquery/jquery-1.10.2.min.js"></script>     
-      <script src="bootstrap/js/bootstrap.js"></script>
-      <script src="js/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">           
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">        
 
     </head>
     <body>
-        <div class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar navbar-static-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="http://berlinsocialrunners.com">
+                    <a class="navbar-brand" href="http://berlinsocialrunners.com">
                         BERLIN SOCIAL RUNNERS
                     </a>
                     <div class="social-home">
@@ -59,9 +52,14 @@
                         <img src="img/index/carousel4.jpg">
                     </div>
                 </div>
-                <!-- Carousel nav -->
-                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                <!-- Carousel nav -->                
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+
             </div>
         
             <div class="newsletter row">
@@ -73,6 +71,7 @@
                     <input type="submit" class="btn newsletterSubmit" value="SUBSCRIBE!"/>
                 </form>                
             </div>
+
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
@@ -149,6 +148,7 @@
                 </div>
               </div>
             </div>
+
             <div id="fb-root"></div>
               <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -156,10 +156,17 @@
                 js = d.createElement(s); js.id = id;
                 js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=629825250364210";
                 fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>            
+              }(document, 'script', 'facebook-jssdk'));</script>  
+
+
             <footer>
                 <p>Berlin Social Runners 2013</p>
             </footer>
-        </div>         
+        </div> 
+
+      <link rel="stylesheet" type="text/css" href="css/style.css">   
+      <!-- Scripts -->      
+      <script src="js/main.min.js"></script>              
+      <script src="js/index.js"></script>        
     </body>
 </html>

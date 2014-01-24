@@ -9,12 +9,12 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar-inverse {
+.navbar {
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.navbar-inverse .brand, .navbar-inverse .brand:hover {
+.navbar .navbar-brand, .navbar-brand:hover {
     color: #FA5858;        
     font-size: 40px;
     margin-top: 14px;
@@ -28,7 +28,7 @@ a:hover {
     box-shadow: none;
 }
 
-.navbar-inverse .navbar-inner {
+.navbar .navbar-inner {
     background-color: #292C32;
     background-image: none;
     border-color: #292C32;
@@ -112,23 +112,36 @@ a.accordion-toggle {
     margin-right: 100px;
 }
 
+@font-face {      
+      src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+}
+@font-face {      
+      src: url("../fonts/bootstrap/glyphicons-halflings-regular.svg");
+}
+@font-face {      
+      src: url("../fonts/bootstrap/glyphicons-halflings-regular.ttf");
+}
+@font-face {      
+      src: url("../fonts/bootstrap/glyphicons-halflings-regular.woff");
+}
+
 @font-face {
       font-family: "StaticFont";
-      src: url("../css/font/static/Static.otf");
+      src: url("../fonts/Static.otf");
 }
 @font-face { 
     font-family: StaticFont; 
     font-weight: bold; 
-    src: url("../css/font/static/StaticBold.otf"); 
+    src: url("../fonts/StaticBold.otf"); 
 }
 @font-face { 
     font-family: StaticFont; 
     font-style: italic; 
-    src: url("../css/font/static/StaticItalic.otf"); 
+    src: url("../fonts/StaticItalic.otf"); 
 }
 @font-face { 
     font-family: StaticFont; 
     font-weight: bold;
     font-style: italic; 
-    src: url("../css/font/static/StaticItalicBold.otf"); 
+    src: url("../fonts/StaticItalicBold.otf"); 
 }
