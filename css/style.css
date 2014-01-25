@@ -16,8 +16,8 @@ a:hover {
 
 .navbar .navbar-brand, .navbar-brand:hover {
     color: #FA5858;        
-    font-size: 40px;
-    margin-top: 14px;
+    font-size: 29px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
@@ -50,13 +50,14 @@ a:hover {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.newsletter span {
-    padding-top: 10px;
+.newsletter {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.newsletterInput {    
-    margin-bottom: 0px !important;
-    height: 32px !important;
+.newsletterInput {
+    width: 45%;
+    height: 40px;     
     font-size: 18px !important;
     font-family: StaticFont;
 }
@@ -73,9 +74,25 @@ a:hover {
     font-family: StaticFont;
 }
 
-a.accordion-toggle {
+.panel-default {
+    border: 1px solid #1C1C1C;
+    border-bottom: 1px solid #FA5858;
+}
+
+.panel-default .panel-heading {
+    background-image: none; 
+    background-color: #1C1C1C;    
+}
+
+.panel-heading h4 {
+    border: 1px solid #1C1C1C;
+    background-color: #1C1C1C;
+}
+
+.panel-title {
     color: #A4A4A4;
     font-size: 20px;
+    font-family: StaticFont;
 }
 
 .img-circle-home {
@@ -84,45 +101,11 @@ a.accordion-toggle {
     margin-right: 20px;
 }
 
-.accordion-group {
-    border: 1px solid #1C1C1C;
-    background-color: #1C1C1C;
-}
-
-.accordion-inner {
+.panel-body {
     color:#000000;
     background-color: #ffffff;
     padding: 0px;
-}
-
-.accordion-inner img {            
-    margin-bottom: 20px;
-}
-
-.accordion-inner div {
-    padding-bottom: 15px;
-}
-
-.accordion-inner ul {
-    margin-left: 200px;        
-}
-
-.accordion-inner h3, .accordion-inner p {
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-@font-face {      
-      src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-}
-@font-face {      
-      src: url("../fonts/bootstrap/glyphicons-halflings-regular.svg");
-}
-@font-face {      
-      src: url("../fonts/bootstrap/glyphicons-halflings-regular.ttf");
-}
-@font-face {      
-      src: url("../fonts/bootstrap/glyphicons-halflings-regular.woff");
+    padding-left: 20px;
 }
 
 @font-face {

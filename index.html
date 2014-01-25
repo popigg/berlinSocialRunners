@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">        
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
         <title>Berlin Social Runners</title>
 
         <!--  styles -->
@@ -9,6 +10,7 @@
         <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">        
 
     </head>
+
     <body>
         <div class="navbar navbar-static-top">
             <div class="navbar-inner">
@@ -28,7 +30,9 @@
                 </div>                
             </div>            
         </div>
-        <div class="container">                         
+
+        <div class="container">   
+
             <div id="myCarousel" class="carousel slide" data-interval="8000">
                 <!-- Carousel indicators -->
                 <ol class="carousel-indicators">
@@ -59,110 +63,119 @@
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">
                   <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
-
             </div>
         
-            <div class="newsletter row">
-                <span class="span2 offset3">Stay in touch</span>
+            <div class="row newsletter">                            
                 <form action="http://berlinsocialrunners.us7.list-manage.com/subscribe/post?u=049bc82d30e4869d740d24d3a&amp;id=1e15c6b33f"
-                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>                    
-                    <input type="text" type="email" class="span3 newsletterInput"
-                         name="EMAIL" placeholder="email address" required>
-                    <input type="submit" class="btn newsletterSubmit" value="SUBSCRIBE!"/>
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                    class="form-inline" target="_blank" novalidate>  
+                    <div class="form-group col-md-5 col-md-offset-3">
+                        <label for="exampleInputEmail2">Stay in touch</label>
+                        
+                        <input type="text" type="email" class="form-control newsletterInput"
+                             name="EMAIL" placeholder="email address" required>
+
+                        <input type="submit" class="btn newsletterSubmit" value="SUBSCRIBE!"/>
+                    </div>
                 </form>                
             </div>
+            
 
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    <img src="img/index/meeting2.png" class="img-circle img-circle-home">
-                    MEETINGS
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <img src="img/index/meeting-inner.jpg">
-                    <div>
-                      <h3>OUR MEETINGS</h3>
-                      <p>
-                        Join and post new meetings in your city. You could choose your favourite parks or routes, share with us!<br /><br />
-                        Our runs are always by time or distance. Almost all runs we can start and end together. We are not competitive, we have fast and slow runners. If you are looking for meeting new friends, keep them motivated to run and have company when training for a race, here we are!<br /><br />
-                        We also participate in some local races: Asics Race Berlin, Half Marathon…<br/>
-                        Always when we finish our training we grab a snack or coffee<br />
-                        Remember "Running is a lot more fun in a group":
-                      </p>                    
-                        <ul>
-                            <li>Create your own event in Berlin</li>
-                            <li>Decide the route, day and time and share with us</li>
-                            <li>And…keep in mind a good place for drinks after!</li>
-                        </ul>
-                    </div>                    
-                  </div>
+            <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <img src="img/index/meeting2.png" class="img-circle img-circle-home">
+                      MEETINGS
+                    </a>
+                  </h4>
                 </div>
               </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    <img src="img/index/route2.png" class="img-circle img-circle-home">
-                    ROUTES
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse in">
-                  <div class="accordion-inner">  
-                    <div>                  
-                      <h3>AM I NEAR BY ...</h3>
-                      <p>
-                        You could choose your best routes and share with the group. We usually run in the difierent parks in Berlin. You could surprise us with new routes and we surprise you with the best company.<br/>
-                        Discover new hills, new roads, new parks. All the routes are wellcome because if you run we run.<br />
-                        Define distances, places, logs, altitude, elevation and the ability to share routes!<br />                        
-                      </p>                    
-                      <ul>
-                          <li>Create your own event in Berlin</li>
-                          <li>Place</li>
-                          <li>Distance and peace</li>
-                          <li>Running Level</li>
-                          <li>Drinks after place</li>
-                      </ul>
-                    </div>                                      
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                    <img src="img/index/sport2.png" class="img-circle img-circle-home">
-                    SPORT-RELATED
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <div>
-                      <h3>WHAT ELSE?</h3>
-                      <p>
-                        Join us and you will be discovering all the topics regarding runners in Berlin…and in the world: Runners, training, races, health, fashion runners, womens, coffee places, shops for runners. And important news about BSR!
-                      </p>
-                      <div class="fb-like" data-href="https://www.facebook.com/berlinsocialrunners" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>  
-                    </div>
-                  </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">                                        
+                  <h3>OUR MEETINGS</h3>
+                  <p>
+                    Join and post new meetings in your city. You could choose your favourite parks or routes, share with us!<br /><br />
+                    Our runs are always by time or distance. Almost all runs we can start and end together. We are not competitive, we have fast and slow runners. If you are looking for meeting new friends, keep them motivated to run and have company when training for a race, here we are!<br /><br />
+                    We also participate in some local races: Asics Race Berlin, Half Marathon…<br/>
+                    Always when we finish our training we grab a snack or coffee<br />
+                    Remember "Running is a lot more fun in a group":
+                  </p>                    
+                  <ul>
+                      <li>Create your own event in Berlin</li>
+                      <li>Decide the route, day and time and share with us</li>
+                      <li>And…keep in mind a good place for drinks after!</li>
+                  </ul>
+                </div>                                      
+              </div>              
+            
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <img src="img/index/route2.png" class="img-circle img-circle-home">
+                      ROUTES
+                    </a>
+                  </h4>
                 </div>
               </div>
+              <div id="collapseTwo" class="panel-collapse collapse in">
+                <div class="panel-body">                                      
+                  <h3>AM I NEAR BY ...</h3>
+                  <p>
+                    You could choose your best routes and share with the group. We usually run in the difierent parks in Berlin. You could surprise us with new routes and we surprise you with the best company.<br/>
+                    Discover new hills, new roads, new parks. All the routes are wellcome because if you run we run.<br />
+                    Define distances, places, logs, altitude, elevation and the ability to share routes!<br />                        
+                  </p>                    
+                  <ul>
+                      <li>Create your own event in Berlin</li>
+                      <li>Place</li>
+                      <li>Distance and peace</li>
+                      <li>Running Level</li>
+                      <li>Drinks after place</li>
+                  </ul>                                                          
+                </div>
+              </div>              
+            
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <img src="img/index/sport2.png" class="img-circle img-circle-home">
+                      SPORT-RELATED
+                    </a>
+                  </h4>
+                </div>
+              </div>                
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">                    
+                  <h3>WHAT ELSE?</h3>
+                  <p>
+                    Join us and you will be discovering all the topics regarding runners in Berlin…and in the world: Runners, training, races, health, fashion runners, womens, coffee places, shops for runners. And important news about BSR!
+                  </p>  
+                  <div class="fb-like" data-href="https://www.facebook.com/berlinsocialrunners" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>             
+                </div>
+              </div>
+                
             </div>
+            
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=629825250364210";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>  
 
-            <div id="fb-root"></div>
-              <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=629825250364210";
-                fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>  
 
+          <footer>
+              <p>Berlin Social Runners 2013</p>
+          </footer>
 
-            <footer>
-                <p>Berlin Social Runners 2013</p>
-            </footer>
-        </div> 
+        </div>
+         
 
       <link rel="stylesheet" type="text/css" href="css/style.css">   
       <!-- Scripts -->      
