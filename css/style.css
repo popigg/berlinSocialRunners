@@ -105,7 +105,11 @@ a:hover {
     color:#000000;
     background-color: #ffffff;
     padding: 0px;
-    padding-left: 20px;
+    padding-left: 20px;    
+}
+
+.panel-body h3 {
+    font-family: StaticFont;
 }
 
 @font-face {
