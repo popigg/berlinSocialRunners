@@ -6,7 +6,7 @@
         <title>Berlin Social Runners</title>
 
         <!--  styles -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">           
+        <link rel="stylesheet" type="text/css" href="css/all.min.css">                  
         <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">        
 
     </head>
@@ -79,107 +79,38 @@
                     </div>
                 </form>                
             </div>
-            
-
+  
             <div class="panel-group" id="accordion">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                      <img src="img/index/meeting2.png" class="img-circle img-circle-home">
-                      MEETINGS
-                    </a>
-                  </h4>
-                </div>              
-                <div id="collapseOne" class="panel-collapse collapse">
-                  <div class="panel-body">                                        
-                    <h3>OUR MEETINGS</h3>
-                    <p>
-                      Join and post new meetings in your city. You could choose your favourite parks or routes, share with us!<br /><br />
-                      Our runs are always by time or distance. Almost all runs we can start and end together. We are not competitive, we have fast and slow runners. If you are looking for meeting new friends, keep them motivated to run and have company when training for a race, here we are!<br /><br />
-                      We also participate in some local races: Asics Race Berlin, Half Marathon…<br/>
-                      Always when we finish our training we grab a snack or coffee<br />
-                      Remember "Running is a lot more fun in a group":
-                    </p>                    
-                    <ul>
-                        <li>Create your own event in Berlin</li>
-                        <li>Decide the route, day and time and share with us</li>
-                        <li>And…keep in mind a good place for drinks after!</li>
-                    </ul>
-                  </div>                                      
-                </div>
-              </div>              
-            
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                      <img src="img/index/route2.png" class="img-circle img-circle-home">
-                      ROUTES
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse in">
-                  <div class="panel-body">                                      
-                    <h3>AM I NEAR BY ...</h3>
-                    <p>
-                      You could choose your best routes and share with the group. We usually run in the difierent parks in Berlin. You could surprise us with new routes and we surprise you with the best company.<br/>
-                      Discover new hills, new roads, new parks. All the routes are wellcome because if you run we run.<br />
-                      Define distances, places, logs, altitude, elevation and the ability to share routes!<br />                        
-                    </p>                    
-                    <ul>
-                        <li>Create your own event in Berlin</li>
-                        <li>Place</li>
-                        <li>Distance and peace</li>
-                        <li>Running Level</li>
-                        <li>Drinks after place</li>
-                    </ul>                                                          
-                  </div>
-                </div> 
-              </div>             
-            
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                      <img src="img/index/sport2.png" class="img-circle img-circle-home">
-                      SPORT-RELATED
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                  <div class="panel-body">                    
-                    <h3>WHAT ELSE?</h3>
-                    <p>
-                      Join us and you will be discovering all the topics regarding runners in Berlin…and in the world: Runners, training, races, health, fashion runners, womens, coffee places, shops for runners. And important news about BSR!
-                    </p>  
-                    <div class="fb-like" data-href="https://www.facebook.com/berlinsocialrunners" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>             
-                  </div>
-                </div>
+                <script id="panel-group" type="text/x-handlebars-template">                                            
+                    {{#panels}}
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#{{collapseNum}}">
+                              <img src="{{panelImgSrc}}" class="img-circle img-circle-home">
+                              {{panelTitle}}
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="{{collapseNum}}" class="panel-collapse collapse {{collapsed}}">
+                          <div class="panel-body">                    
+                            <h3>{{bodyTitle}}</h3>
+                            <p>
+                              {{bodyText}}
+                            </p>                      
+                          </div>
+                        </div>
+                      </div>
+                    {{/panels}}
+                </script>  
             </div>
 
-            </div>
-            
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=629825250364210";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>  
-
-
-          <footer>
+            <footer>
               <p>Berlin Social Runners 2013</p>
-          </footer>
-
+            </footer>            
         </div>
          
-
-      <link rel="stylesheet" type="text/css" href="css/style.css">   
       <!-- Scripts -->      
       <script src="js/main.min.js"></script>              
-      <script src="js/index.js"></script>        
     </body>
 </html>
