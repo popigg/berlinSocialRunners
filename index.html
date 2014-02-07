@@ -80,29 +80,7 @@
                 </form>                
             </div>
   
-            <div class="panel-group" id="accordion">
-                <script id="panel-group" type="text/x-handlebars-template">                                            
-                    {{#panels}}
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#{{collapseNum}}">
-                              <img src="{{panelImgSrc}}" class="img-circle img-circle-home">
-                              {{panelTitle}}
-                            </a>
-                          </h4>
-                        </div>
-                        <div id="{{collapseNum}}" class="panel-collapse collapse {{collapsed}}">
-                          <div class="panel-body">                    
-                            <h3>{{bodyTitle}}</h3>
-                            <p>
-                              {{bodyText}}
-                            </p>                      
-                          </div>
-                        </div>
-                      </div>
-                    {{/panels}}
-                </script>  
+            <div class="panel-group" id="accordion">                
             </div>
 
             <footer>
@@ -111,6 +89,6 @@
         </div>
          
       <!-- Scripts -->      
-      <script src="js/main.min.js"></script>              
+      <script src="js/all.min.js"></script>              
     </body>
 </html>
