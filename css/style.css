@@ -12,38 +12,28 @@ a:hover {
 .navbar {
     margin-bottom: 20px;
     margin-top: 20px;
+    background-color: #292C32;    
+    border-color: #292C32;
 }
 
-.navbar .navbar-brand, .navbar-brand:hover {
-    color: #FA5858;        
-    font-size: 29px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.navbar-fixed-top .navbar-inner,
-.navbar-static-top .navbar-inner {
+.navbar-static-top {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
 }
 
-.navbar .navbar-inner {
-    background-color: #292C32;
-    background-image: none;
-    border-color: #292C32;
+.navbar-brand, .navbar-brand:hover {
+    color: #FA5858;        
+    font-size: 29px;    
+    font-weight: bold;
 }
 
-.social-home {
-    float:right;
+.navbar-nav li a:hover {
+    background-color: #A4A4A4;
 }
 
-.social-home span{
-    margin-right: 18px;
-}
-
-.img-social-home {
-    width: 60px;
+.navbar-nav li a{
+    color: #ffffff;
 }
 
 .carousel-control {
@@ -110,6 +100,18 @@ a:hover {
 
 .panel-body h3 {
     font-family: StaticFont;
+}
+
+.footer {
+
+}
+
+.social-home span{
+    margin-right: 18px;
+}
+
+.img-social-home {
+    width: 60px;
 }
 
 @font-face {
