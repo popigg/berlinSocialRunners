@@ -1,6 +1,7 @@
-<!-- contact.html -->
-<div class="jumbotron text-center">
-	<h1>Locations Page</h1>
-
+<!-- locations.html -->
+<div>			
 	<p>{{ message }}</p>
+	<google-map center="map.center" zoom="map.zoom">
+		<markers models="markers.models" coords="markers.coords" icon="markers.icon"></markers>
+	</google-map>
 </div>
