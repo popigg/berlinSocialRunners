@@ -28,6 +28,10 @@ a:hover {
     font-weight: bold;
 }
 
+.navbar-nav li.active{
+    background-color: #A4A4A4;
+}
+
 .navbar-nav li a:hover {
     background-color: #A4A4A4;
 }
@@ -85,6 +89,10 @@ a:hover {
     font-family: StaticFont;
 }
 
+.panel-title a {
+    cursor: pointer;
+}
+
 .img-circle-home {
     width: 55px;
     background-color: grey;
@@ -94,24 +102,39 @@ a:hover {
 .panel-body {
     color:#000000;
     background-color: #ffffff;
-    padding: 0px;
-    padding-left: 20px;    
+    padding-right: 40px;
+    padding-left: 40px;    
 }
 
 .panel-body h3 {
     font-family: StaticFont;
+    font-weight: bold;
 }
 
-.footer {
-
+.angular-google-map-container { 
+    height: 500px; 
 }
 
-.social-home span{
-    margin-right: 18px;
+footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.social-home {
+    margin-top: 50px;
 }
 
 .img-social-home {
-    width: 60px;
+    width: 70px;
+}
+
+.social-home a {
+    color: #FA5858; 
+    margin-left: 5px;
+}
+
+.social-home p {
+    margin-top: 20px;
 }
 
 @font-face {
