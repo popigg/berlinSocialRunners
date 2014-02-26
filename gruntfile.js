@@ -16,14 +16,16 @@ module.exports = function(grunt) {
 		},		
 		concat: {
 	        options: {
-	            separator: '',
+	            separator: grunt.util.linefeed + ';' + grunt.util.linefeed,	            
 	        },
 	        dist: {
-	            src: [
+	            src: [	            	
 	            	'bower_components/angular/angular.min.js',
 	                'bower_components/angular-route/angular-route.min.js',
 	                'bower_components/angular-bootstrap/ui-bootstrap.min.js',
-	                'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
+	                'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',	                
+	                'bower_components/underscore/underscore-min.js',
+	                'bower_components/angular-google-maps/dist/angular-google-maps.min.js',
 	                'js/all.min.js',	                
 	            ],
 	            dest: 'js/main.min.js',
