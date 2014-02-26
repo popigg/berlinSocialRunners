@@ -13,7 +13,7 @@
 
   <body>
     <header id="header">
-      <div class="navbar navbar-defaul navbar-static-top" role="navigation">    
+      <div class="navbar navbar-defaul navbar-static-top" role="navigation" ng-controller="navbarController">    
         <div class="container">        
             <div class="navbar-header">            
                 <a class="navbar-brand" href="#">
@@ -22,16 +22,15 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">home</a></li>                    
-                    <li><a href="#members">members</a></li>
-                    <li><a href="#locations">locations</a></li>
-                    <li><a href="#newsletters">newsletters</a></li>                    
+                    <li ng-class="{ active: isActive('/')}"><a href="#">home</a></li>                    
+                    <li ng-class="{ active: isActive('/members')}"><a href="#members">members</a></li>
+                    <li ng-class="{ active: isActive('/locations')}"><a href="#locations">locations</a></li>
+                    <li ng-class="{ active: isActive('/newsletters')}"><a href="#newsletters">newsletters</a></li>                    
                 </ul>
             </div>
         </div>            
     </div>
-    </header>  
-
+    </header>      
     <div class="container">   
       <div ng-controller="homeCtrl">                   
             <div ng-view></div>        
@@ -39,25 +38,26 @@
     </div>
 
     <footer id="footer">
-      <div class="container">
+      <div class="container"> 
+
         <div class="social-home">
-          <form>
-            <label>We like your feedback</label>
-          </form>
-          <span>Find us</span>
+          <span>Contact us</span>
           <a href="https://www.facebook.com/groups/BerlinSocialRunners/" target="_blank">
               <img src="img/index/facebook.png" class="img-circle img-social-home">                    
           </a>
           <a href="https://twitter.com/berlinrunners"  target="_blank">
               <img src="img/index/twitter.png" class="img-circle img-social-home">                    
-          </a>                       
-        </div>    
-        <p>Berlin Social Runners 2013</p>
+          </a>  
+          <a href="mailto:feedback@berlinsocialrunners.com">
+              feedback [at] berlinsocialrunners / com
+          </a>          
+          <p>Berlin Social Runners created in 2013 with LOoooOVEeee!!!</p>                     
+        </div>
       </div>
     </footer> 
     
     <!-- Scripts -->      
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script src="js/main.min.js"></script>             
-
   </body>
 </html>
