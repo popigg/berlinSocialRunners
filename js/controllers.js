@@ -1,5 +1,12 @@
 var runnersAppCtrls = angular.module('runnersAppCtrls', []);
 
+function navbarController($scope, $location) 
+{ 
+    $scope.isActive = function (viewLocation) { 
+        return viewLocation === $location.path();
+    };
+}
+
 runnersAppCtrls.controller('homeCtrl', function($scope) {
 
 	$scope.interval = 8000;
@@ -57,13 +64,47 @@ runnersAppCtrls.controller('homeCtrl', function($scope) {
 });
 
 runnersAppCtrls.controller('membersCtrl', function($scope) {
-  $scope.message = 'Look! I am a member page.';
+	$scope.message = 'Look! I am a member page.';
 });
 
 runnersAppCtrls.controller('locationsCtrl', function($scope) {
-  $scope.message = 'Locations us! JK. This is just a demo.';
+	$scope.message = 'Find what are the best locations to join to the group.';
+	
+	$scope.map = {		
+	    center: {
+	        latitude: 52.517571,
+	        longitude: 13.433352
+	    },
+	    zoom: 11
+	};
+	$scope.markers = {		
+		models: [
+			{
+				// tiergarten
+				latitude: 52.517571,
+        		longitude: 13.433352
+	        },	        
+	      	{
+	      		// volspark friedrichain
+				latitude: 52.52,
+	        	longitude: 13.43
+	        },	
+	        {
+	        	// treptower park
+				latitude: 52.52,
+	        	longitude: 13.44
+	        },	
+	        {
+	        	// grunewald
+				latitude: 52.53,
+	        	longitude: 13.45
+	        },	        
+		],
+		coords: 'self',
+		icon: 'img/locations/marker.png'
+	};
 });
 
 runnersAppCtrls.controller('newslettersCtrl', function($scope) {
-  $scope.message = 'Contact us! JK. This is just a demo.';
+  	$scope.message = 'Contact us! JK. This is just a demo.';  
 });
