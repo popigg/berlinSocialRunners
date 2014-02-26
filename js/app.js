@@ -1,4 +1,4 @@
-var runnersApp = angular.module('app', ['ngRoute', 'ui.bootstrap' ,'runnersAppCtrls']);
+var runnersApp = angular.module('app', ['ngRoute', 'ui.bootstrap' ,'runnersAppCtrls', 'google-maps']);
  
 runnersApp.config(['$routeProvider',
   function($routeProvider) {
