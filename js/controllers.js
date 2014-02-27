@@ -24,7 +24,7 @@ runnersAppCtrls.controller('homeCtrl', function($scope) {
 		{
 			image: 'img/index/carousel4.jpg',			
 		}
-	];
+	];	
 
 	$scope.oneAtATime = true;
 
@@ -63,41 +63,65 @@ runnersAppCtrls.controller('homeCtrl', function($scope) {
 	  ];  	 
 });
 
-runnersAppCtrls.controller('membersCtrl', function($scope) {
-	$scope.message = 'Look! I am a member page.';
+runnersAppCtrls.controller('memoriesCtrl', function($scope, $modal) {
+	$scope.message = 'A small selection of our post run coffee photos.';	
+	$scope.imgs = [		
+		'img/memories/memories1.jpg',
+		'img/memories/memories2.jpg',					
+		'img/memories/memories3.jpg',			
+		'img/memories/memories10.jpg',
+		'img/memories/memories4.jpg',
+		'img/memories/memories5.jpg',
+		'img/memories/memories6.jpg',
+		'img/memories/memories7.jpg',	
+		'img/memories/memories8.jpg',	
+		'img/memories/memories9.jpg',				
+		 ];
+
+	$scope.open = function (imgSrc) {
+
+	    var modalInstance = $modal.open({
+	      templateUrl: 'myModalContent.html',    
+	      resolve: {
+	        items: function () {
+	          return $scope.src;
+	        }
+	      }
+	    });    
+  	}; 
 });
 
 runnersAppCtrls.controller('locationsCtrl', function($scope) {
-	$scope.message = 'Find what are the best locations to join to the group.';
+	$scope.message = 'Find what are the best locations to join to the group. Please let us know if there are another places we missed on the map.';
 	
 	$scope.map = {		
 	    center: {
 	        latitude: 52.517571,
-	        longitude: 13.433352
+	        longitude: 13.41
 	    },
-	    zoom: 11
+	    zoom: 12
 	};
 	$scope.markers = {		
 		models: [
 			{
-				// tiergarten
-				latitude: 52.517571,
-        		longitude: 13.433352
+				// tiergarten				
+				latitude: 52.516002,
+        		longitude: 13.376587
 	        },	        
 	      	{
-	      		// volspark friedrichain
-				latitude: 52.52,
-	        	longitude: 13.43
+	      		// volspark friedrichain	      		
+				latitude: 52.528075,
+	        	longitude: 13.425541
 	        },	
 	        {
-	        	// treptower park
-				latitude: 52.52,
-	        	longitude: 13.44
+	        	// treptower park	        	
+				latitude: 52.493010,
+	        	longitude: 13.461626
 	        },	
 	        {
-	        	// grunewald
-				latitude: 52.53,
-	        	longitude: 13.45
+	        	// grunewald	        	
+				latitude: 52.488884,
+	        	longitude: 13.261605
 	        },	        
 		],
 		coords: 'self',
@@ -105,6 +129,6 @@ runnersAppCtrls.controller('locationsCtrl', function($scope) {
 	};
 });
 
-runnersAppCtrls.controller('newslettersCtrl', function($scope) {
-  	$scope.message = 'Contact us! JK. This is just a demo.';  
-});
+// runnersAppCtrls.controller('newslettersCtrl', function($scope) {
+//   	$scope.message = 'Contact us! JK. This is just a demo.';  
+// });
