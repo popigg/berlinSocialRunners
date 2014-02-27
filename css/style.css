@@ -112,7 +112,11 @@ a:hover {
 }
 
 .angular-google-map-container { 
-    height: 500px; 
+    height: 530px; 
+}
+
+div.memories-pics {
+    margin-bottom:7px;
 }
 
 footer {
