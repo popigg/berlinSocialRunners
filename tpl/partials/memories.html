@@ -1,0 +1,15 @@
+<!-- members.html -->
+<div>	
+	<p>{{ message }}</p>
+	<div class="col-md-4 memories-pics" ng-repeat="images in imgs">
+		<a href="" ng-click="open()">
+			<img class="img-thumbnail" ng-src="{{images}}">
+		</a>
+	</div>
+	 
+	<script type="text/ng-template" id="myModalContent.html">
+		<div class="modal-body">
+		    <img src="{{images}}>
+		</div>	
+	</script> 
+</div>
