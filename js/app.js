@@ -6,19 +6,19 @@ runnersApp.config(['$routeProvider',
       .when('/', {
         templateUrl: 'tpl/partials/home.html',
         controller: 'homeCtrl'
-      })
-      .when('/members', {
-        templateUrl: 'tpl/partials/members.html',
-        controller: 'membersCtrl'
-      })
+      })      
       .when('/locations', {
         templateUrl: 'tpl/partials/locations.html',
         controller: 'locationsCtrl'
       })
-      .when('/newsletters', {
-        templateUrl: 'tpl/partials/newsletters.html',
-        controller: 'newslettersCtrl'
+      .when('/memories', {
+        templateUrl: 'tpl/partials/memories.html',
+        controller: 'memoriesCtrl'
       })
+      // .when('/newsletters', {
+      //   templateUrl: 'tpl/partials/newsletters.html',
+      //   controller: 'newslettersCtrl'
+      // })
       .otherwise({
         redirectTo: '/'
       });
