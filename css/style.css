@@ -115,6 +115,10 @@ a:hover {
     height: 530px; 
 }
 
+.modal-pics .modal-dialog{
+    width: 900px;
+}
+
 div.memories-pics {
     margin-bottom:7px;
 }
@@ -125,7 +129,7 @@ footer {
 }
 
 .social-home {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .img-social-home {
