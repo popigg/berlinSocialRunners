@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-ngmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.initConfig({
 		ngmin: {
@@ -53,6 +54,16 @@ module.exports = function(grunt) {
 			      			'css/style.min.css'
   					]
 			    }
+			}
+		},
+		watch: {
+			scripts: {
+				files: ['js/app.js', 'js/controllers.js'],
+				tasks: ['ngmin', 'concat'],				
+			},
+			css: {
+				files: 'css/style.css',
+				tasks: ['cssmin'],				
 			}
 		},
 	});	
