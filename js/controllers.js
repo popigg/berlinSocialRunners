@@ -69,30 +69,34 @@ runnersAppCtrls.controller('memoriesCtrl', function($scope, $modal) {
 		'img/memories/memories1.jpg',
 		'img/memories/memories2.jpg',					
 		'img/memories/memories3.jpg',			
-		'img/memories/memories10.jpg',
-		'img/memories/memories4.jpg',
+		'img/memories/memories10.jpg',		
 		'img/memories/memories5.jpg',
 		'img/memories/memories6.jpg',
 		'img/memories/memories7.jpg',	
 		'img/memories/memories8.jpg',	
 		'img/memories/memories9.jpg',				
-		 ];
+		 ];	
 
 	$scope.open = function (imgSrc) {
-
-	    var modalInstance = $modal.open({
-	      templateUrl: 'myModalContent.html',    
+		var modalInstance = $modal.open({
+	      templateUrl: 'myModalContent.html',
+	      controller: ModalInstanceCtrl,
+	      windowClass: 'modal-pics',
 	      resolve: {
-	        items: function () {
-	          return $scope.src;
-	        }
+				imgSrc: function () {
+				  return imgSrc;
+				}
 	      }
-	    });    
-  	}; 
+	    });
+	}; 
 });
 
+var ModalInstanceCtrl = function ($scope, imgSrc) {		
+  	$scope.imgSrc = imgSrc;
+};
+
 runnersAppCtrls.controller('locationsCtrl', function($scope) {
-	$scope.message = 'Find what are the best locations to join to the group. Please let us know if there are another places we missed on the map.';
+	$scope.message = 'What are the best locations to join to the group? Please let us know about other locations we will point them in the map.';
 	
 	$scope.map = {		
 	    center: {
