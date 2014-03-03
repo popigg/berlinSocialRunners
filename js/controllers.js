@@ -5,6 +5,18 @@ function navbarController($scope, $location)
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
     };
+
+    $scope.isCollapsed = true;    
+    
+    $scope.menu = [
+        {text: 'home', link : '/'},
+        {text: 'locations', link : '/locations'},    
+        {text: 'memories', link : '/memories'},
+    ];
+
+    $scope.collapse = function() {
+    	$scope.isCollapsed = true;
+    }    
 }
 
 runnersAppCtrls.controller('homeCtrl', function($scope) {
@@ -30,35 +42,35 @@ runnersAppCtrls.controller('homeCtrl', function($scope) {
 
 	$scope.panelItems = [
 	    {	      
-	      panelImgSrc: 'img/index/meeting2.png', 
-	      panelTitle: 'MEETINGS', 	
-	      isOpen: 'true',      
-	      bodyTitle: 'OUR MEETINGS',
-	      bodyText: 'Join and post new meetings in your city. You could choose your favourite parks or routes, share with us! Our runs are always by time or distance. Almost all runs we can start and end together. We are not competitive, we have fast and slow runners. If you are looking for meeting new friends, keep them motivated to run and have company when training for a race, here we are! We also participate in some local races: Asics Race Berlin, Half Marathon… Always when we finish our training we grab a snack or coffee. Remember "Running is a lot more fun in a group":',
-	      bodyList: [
-	       'Create your own event in Berlin',   
-	       'Decide the route, day and time and share with us',    
-	       'And…keep in mind a good place for drinks after!',   
-	      ]
+			panelImgSrc: 'img/index/meeting2.png', 
+			panelTitle: 'MEETINGS', 	
+			isOpen: 'true',      
+			bodyTitle: 'OUR MEETINGS',
+			bodyText: 'Join us or post new meetings in Berlin. We are not competitive, with several levels and most of the time very flexible. Whether you like meeting new people, do some running with company, training for a race or just for fun, we are that kind of group. We also participate in some local races: Asics Race Berlin, Berlin Half Marathon... Remember "Running is a lot more fun in a group"',
+			bodyList: [
+				'Create your own event in Berlin',   
+				'Decide the route, day and time and post it in the Facebook group',    
+				'And…keep in mind a good place for drinks after!',   
+			]
 	    },  
 	    {	      
-	      panelImgSrc: 'img/index/route2.png', 
-	      panelTitle: 'ROUTES', 	     
-	      bodyTitle: 'AM I NEAR BY ...',
-	      bodyText: 'You could choose your best routes and share with the group. We usually run in the difierent parks in Berlin. You could surprise us with new routes and we surprise you with the best company. Discover new hills, new roads, new parks. All the routes are wellcome because if you run we run. Define distances, places, logs, altitude, elevation and the ability to share routes!',
-	        bodyList: [
-		     'Create your own event in Berlin',
-		     'Place',   
-		     'Distance and peace',    
-		     'Running Level',
-		     'Drinks after place',    
-	    	]  
+			panelImgSrc: 'img/index/route2.png', 
+			panelTitle: 'ROUTES', 	     
+			bodyTitle: 'AM I NEAR BY ...',
+			bodyText: 'We usually run in the difierent parks in Berlin. We alredy got a wide list of places to go but new routes are always welcome.',
+			bodyList: [
+				'Location',
+				'Time',   
+				'Distance',    
+				'Running level',
+				'Drinks after place',    
+			]  
 	    },
 	    {	      
-	      panelImgSrc: 'img/index/sport2.png', 
-	      panelTitle: 'SPORT-RELATED', 	      
-	      bodyTitle: 'WHAT ELSE?',
-	      bodyText: 'Join us and you will be discovering all the topics regarding runners in Berlin…and in the world: Runners, training, races, health, fashion runners, womens, coffee places, shops for runners. And important news about BSR!',      
+			panelImgSrc: 'img/index/sport2.png', 
+			panelTitle: 'SPORT-RELATED', 	      
+			bodyTitle: 'WHAT ELSE?',
+			bodyText: 'In the Newsletter you will find next topics: Runners, training, races, health, fashion runners, womens, coffee places, shops for runners. And some breaking news about BSR!',      
 	    },
 	  ];  	 
 });
@@ -75,6 +87,7 @@ runnersAppCtrls.controller('memoriesCtrl', function($scope, $modal) {
 		'img/memories/memories7.jpg',	
 		'img/memories/memories8.jpg',	
 		'img/memories/memories9.jpg',				
+		'img/memories/memories11.jpg',				
 		 ];	
 
 	$scope.open = function (imgSrc) {
@@ -96,7 +109,7 @@ var ModalInstanceCtrl = function ($scope, imgSrc) {
 };
 
 runnersAppCtrls.controller('locationsCtrl', function($scope) {
-	$scope.message = 'What are the best locations to join to the group? Please let us know about other locations we will point them in the map.';
+	$scope.message = 'What are the best locations to join the group? Please let us know about other locations we will point them in the map.';
 	
 	$scope.map = {		
 	    center: {
