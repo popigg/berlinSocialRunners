@@ -22,10 +22,22 @@ a:hover {
     box-shadow: none;
 }
 
+.navbar-collapse {
+    box-shadow: none;
+}
+
 .navbar-brand, .navbar-brand:hover {
     color: #FA5858;        
     font-size: 29px;    
     font-weight: bold;
+}
+
+.navbar-toggle {
+    background-color: #FA5858;
+}
+
+.icon-bar {
+    background-color: #292C32;
 }
 
 .navbar-nav li.active{
@@ -113,6 +125,11 @@ a:hover {
 
 .angular-google-map-container { 
     height: 530px; 
+}
+
+.memories-pics img {
+    width: 350px;
+    height: 200px;
 }
 
 .modal-pics .modal-dialog{
