@@ -93,8 +93,7 @@ runnersAppCtrls.controller('memoriesCtrl', function($scope, $modal) {
 	$scope.open = function (imgSrc) {
 		var modalInstance = $modal.open({
 	      templateUrl: 'myModalContent.html',
-	      controller: ModalInstanceCtrl,
-	      windowClass: 'modal-pics',
+	      controller: ModalInstanceCtrl,	      
 	      resolve: {
 				imgSrc: function () {
 				  return imgSrc;

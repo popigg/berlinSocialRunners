@@ -2,7 +2,7 @@ body {
     background-color: #292C32;
     color: #ffffff;                
     font-family: StaticFont;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 a:hover {
@@ -28,7 +28,7 @@ a:hover {
 
 .navbar-brand, .navbar-brand:hover {
     color: #FA5858;        
-    font-size: 29px;    
+    font-size: 20px;    
     font-weight: bold;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 
 .panel-title {
     color: #A4A4A4;
-    font-size: 20px;
+    font-size: 17px;
     font-family: StaticFont;
 }
 
@@ -118,17 +118,13 @@ a:hover {
     padding-left: 40px;    
 }
 
-.panel-body h3 {
+.panel-body h4 {
     font-family: StaticFont;
     font-weight: bold;
 }
 
 .angular-google-map-container { 
     height: 530px; 
-}
-
-.modal-pics .modal-dialog{
-    width: 900px;
 }
 
 div.memories-pics {
