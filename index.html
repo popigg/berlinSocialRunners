@@ -1,67 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <meta charset="utf-8">     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Berlin Social Runners</title>
-    <meta name="description" content="Group for running meetings in Berlin. Pick up a day, time and meeting location. Keep in mind a good place for drinks after! Participate with us in different local races">
-    <meta name="keywords" content="running group, runners, Berlin, routes, meeting, contact, races, social">
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<html lang="en" data-ng-app="app">
+    <head>
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 
-    <!--  styles -->
-    <link rel="stylesheet" type="text/css" href="main.min.css">
+        <title>Berlin Social Runners</title>
+        <meta name="description" content="Group for running meetings in Berlin. Pick up a day, time and meeting location. Keep in mind a good place for drinks after! Participate with us in different local races">
+        <meta name="keywords" content="running group, runners, Berlin, routes, meeting, contact, races, social">
+        <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
-  </head>
+        <!--  bootstrap -->    
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-  <body>
-    <header id="header">
-      <div class="navbar navbar-defaul navbar-static-top" role="navigation" ng-controller="navbarController">    
-        <div class="container">        
-            <div class="navbar-header"> 
-                <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    BERLIN SOCIAL RUNNERS
-                </a>
-            </div>
-            <div collapse="isCollapsed" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li ng-repeat="m in menu" ng-class="{ active: isActive(m.link)}"><a href="#{{ m.text }}" ng-click="collapse()">{{ m.text }}</a></li>
-                </ul>
-            </div>
-        </div>            
-    </div>
-    </header>      
-    <div class="container">   
-      <div ng-controller="homeCtrl">                   
-            <div ng-view></div>        
-      </div>      
-    </div>
+        <!-- my styles -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">            
+    </head>
 
-    <footer id="footer">
-      <div class="container"> 
+    <body data-ng-controller="Controller" data-ng-view>    
 
-        <div class="social-home">
-          <span>Contact us</span>
-          <a href="https://www.facebook.com/groups/BerlinSocialRunners/" target="_blank">
-              <img src="index/facebook.png" class="img-circle img-social-home">                    
-          </a>
-          <a href="https://twitter.com/berlinrunners"  target="_blank">
-              <img src="index/twitter.png" class="img-circle img-social-home">                    
-          </a>  
-          <a href="mailto:feedback@berlinsocialrunners.com">
-              feedback [at] berlinsocialrunners / com
-          </a>          
-          <p>Berlin Social Runners created in 2013 with LOoooOVEeee!!!</p>                     
-        </div>
-      </div>
-    </footer> 
-    
-    <!-- Scripts -->      
-     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="main.min.js"></script>             
-  </body>
+        <!-- Scripts -->      
+        <script src="angular/angular.min.js"></script>
+        <script src="angular-route/angular-route.min.js"></script>
+        <script src="lodash/dist/lodash.min.js"></script>
+        <script src="bluebird/js/browser/bluebird.js"></script>    
+        <script src="angular-google-maps/dist/angular-google-maps.min.js"></script>
+
+        <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
+
+        <!-- my scripts -->
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="controller.js"></script>
+            
+    </body>
 </html>

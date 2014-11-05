@@ -22,11 +22,9 @@ module.exports = function(grunt) {
 	        dist: {
 	            src: [	            	
 	            	'bower_components/angular/angular.min.js',
-	                'bower_components/angular-route/angular-route.min.js',
-	                'bower_components/angular-bootstrap/ui-bootstrap.min.js',
-	                'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',	                
-	                'bower_components/underscore/underscore-min.js',
-	                'bower_components/angular-google-maps/dist/angular-google-maps.min.js',
+	                'bower_components/angular-route/angular-route.min.js',	                	                
+	                'bower_components/angular-google-maps/dist/angular-google-maps.min.js',	                
+	                'bower_components/lodash/dist/lodash.min.js',
 	                'js/all.min.js',	                
 	            ],
 	            dest: 'js/main.min.js',
@@ -45,16 +43,7 @@ module.exports = function(grunt) {
 	    	minify: {	    			
 				    src: 'css/style.css',
 				    dest: 'css/style.min.css',				    
-			},
-			combine: {
-			    files: {
-			      'css/main.min.css': [
-			      			'bower_components/bootstrap/dist/css/bootstrap.min.css', 
-			      			'bower_components/bootstrap/dist/css/bootstrap-theme.min.css', 
-			      			'css/style.min.css'
-  					]
-			    }
-			}
+			},			
 		},
 		watch: {
 			scripts: {

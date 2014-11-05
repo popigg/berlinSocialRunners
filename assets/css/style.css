@@ -1,0 +1,115 @@
+body {        
+    font-family: Kelson;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {    
+    color: #f82e4c
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f82e4c !important;
+}
+
+li a.active {
+    color: #f82e4c !important;     
+}
+
+h2 {
+    color: #f7ca8c;
+}
+
+.header-img {
+    width: 1900px;    
+}
+
+.navbar-default .navbar-collapse {
+    background-color: #ffffff;    
+}
+
+.container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.panel {
+    border: none;
+}
+
+.panel-heading {
+    background-color: #000 !important;    
+    border-color: #000 !important;
+    padding-top: 40px;
+    padding-bottom: 40px;        
+}
+
+.panel-title {
+    font-size: 100px;
+    color: #ffffff;    
+    margin-right: 20px;
+    font-weight: 300;
+}
+
+.panel-body {    
+    font-size: 22px;
+    color: #000;
+    background-color: #ffffff;
+    border-color: #ffffff !important;       
+}
+
+.panel-body p {
+    margin: 20px;    
+}
+
+.panel-braker {
+    margin: 40px 0px 40px 0px;
+}
+
+.panel-braker-text {
+    margin: 20px 0px;
+}
+
+.img-social-cta {
+    width: 70px;    
+}
+
+.angular-google-map-container { 
+    height: 530px;          
+}
+
+.marker-label {
+    background-color: #ffffff;    
+    font-size: 12px;
+    font-family: Kelson;
+}
+
+footer {    
+    padding-left: 40px;
+    margin-top: 20px;    
+}
+
+.author-attribution {
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+@font-face {
+      font-family: Kelson;
+      font-weight: 300; 
+      src: url("../fonts/KelsonSansLight.otf");
+}
+
+@font-face { 
+    font-family: Kelson;
+    font-weight: bold;         
+    src: url("../fonts/KelsonSansRegular.otf"); 
+}
+
+@font-face { 
+    font-family: Kelson; 
+    font-weight: bolder; 
+    src: url("../fonts/KelsonSansBold.otf"); 
+}
+

@@ -1,0 +1,109 @@
+<!-- home.html -->
+<header class="container-fluid">	
+    <div class="navbar-default navbar-fixed-top col-xs-12" role="navigation">                    
+        <ul class="nav navbar-nav">
+            <li ng-repeat="m in menu" >
+            	<a href="#/#{{ m.link }}" class="col-md-12 col-sm-12 col-xs-3" ng-class="{ active: isActive(m.link) }" ng-click="goTo(m.link)">{{ m.text }}</a>
+        	</li>
+        </ul>        
+    </div>
+    <img src="img/index/BerlinSocialRunnersCover4.png" class="img-responsive header-img">          
+</header>
+
+<div id="what" class="container-fluid">
+	<div class="panel panel-default">
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-heading">
+			<h1 class="panel-title text-right">THE<br />GROUP</h1>	
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-body text-left">
+			<p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>. Suspendisse efficitur risus et accumsan viverra. Donec et ante at tortor dignissim viverra vel quis <a href="#">leo</a>.<br /><br /><small>Morbi porta cursus eros sed finibus. Nunc et euismod sapien. Fusce.</small>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid panel-braker">
+	<p class="text-center">
+		For further info join us <a href="https://www.facebook.com/groups/BerlinSocialRunners/" target="_blank"><img src="img/index/facebook29.png" class="img-social-cta"></a>
+	</p>
+</div>
+
+<div id="how" class="container-fluid">
+	<div class="panel panel-default">
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-heading">
+			<h1 class="panel-title text-right">MEETINGS</h1>	
+		</div>	
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-body text-left">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur risus et accumsan viverra. <br /><br /><small>Morbi porta cursus eros sed finibus. <a href="#">Nunc et euismod sapien</a>. Fusce.</small>
+			</p>
+		</div>		
+	</div>
+</div>
+
+<div class="container-fluid panel-braker">
+	<div class="row">
+		<div class="col-md-3 col-xs-3 text-center">
+			<img src="img/index/map84.png" class="img-rounded">
+			<p class="panel-braker-text">Find a nice <b>route</b></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3 text-center">
+			<img src="img/index/location2.png" class="img-rounded" style="height:60px">
+			<p class="panel-braker-text">Indicate the <b>starting point</b></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3 text-center">
+			<img src="img/index/calendar68.png" class="img-rounded">
+			<p class="panel-braker-text">Pick up a <b>date</b></p>
+		</div>
+
+		<div class="col-md-3 col-xs-3 text-center" class="img-rounded">
+			<img src="img/index/runer.png">
+			<p class="panel-braker-text">Share your <b>run</b></p>
+		</div>
+	</div>
+</div>
+
+<div id="where" class="container-fluid">
+	<div class="panel panel-default">
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-heading">
+			<h1 class="panel-title text-right">FIND<br />US</h1>	
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-body text-left">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur risus et accumsan viverra. Donec et ante at tortor dignissim viverra vel quis leo.<br /><br /><small>Morbi porta cursus eros sed finibus. Nunc et euismod sapien. Fusce.</small>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid panel-braker">
+	<div class="col-md-8 col-md-offset-2">
+		<ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="false">
+			<ui-gmap-marker idkey="marker.id" coords="marker.coords" icon="marker.icon" options="marker.options"></ui-gmap-marker>
+		</ui-gmap-google-map>		
+	</div>
+</div>
+
+<div id="enjoy" class="container-fluid">
+	<div class="panel panel-default">		
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-heading">		
+			<h1 class="panel-title text-right">HAVE<br /> FUN</h1>	
+		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12 panel-body text-left">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur risus et accumsan viverra. <br /><br /><small>Morbi porta cursus eros sed finibus. Nunc et euismod sapien. Fusce.</small>
+			</p>
+		</div>		
+	</div>
+</div>
+
+<footer>
+	<div class="pull-left">
+        <a href="mailto:feedback@berlinsocialrunners.com">
+        feedback [at] berlinsocialrunners / com
+        </a>          
+        <p><b>Berlin Social Runners created in 2013 with LOoooOVEeee!!!</b></p>
+    </div>
+    <div class="pull-right author-attribution">
+    	Icons made by Daniel Bruce, Freepik, SimpleIcon, Silviu Runceanu from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+    </div>                         
+</footer>

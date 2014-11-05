@@ -6,10 +6,10 @@ var swig 	= require('swig');
 
 
 app.engine('html', swig.renderFile);
-app.use(express.static(__dirname + '/css'));
+app.use(express.static(__dirname + '/assets'));
 app.use(express.static(__dirname + '/bower_components'));
-app.use(express.static(__dirname + '/js'));
-app.use(express.static(__dirname + '/img'));
+app.use(express.static(__dirname + '/app'));
+
 
 app.set('view engine', 'html');
 app.set('views', __dirname);
