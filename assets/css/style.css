@@ -1,7 +1,42 @@
+@media (max-width: 480px) { 
+    body { 
+        font-size: 1em; 
+    }    
+    .panel-title {
+        font-size: 2em;
+    }
+    .panel-body {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    body { 
+        font-size: 1.4em; 
+    }
+    .panel-title {
+        font-size: 6em;
+    }
+    .panel-body {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 979px) {
+    body { 
+        font-size: 1.6em; 
+    }
+    .panel-title {
+        font-size: 7em;
+    }
+    .panel-body {
+        font-size: 1.6em;
+    }
+}
+
 body {        
     font-family: Kelson;
-    font-weight: 300;
-    font-size: 18px;
+    font-weight: 300;        
 }
 
 a {    
@@ -46,14 +81,12 @@ h2 {
 }
 
 .panel-title {
-    font-size: 100px;
     color: #ffffff;    
     margin-right: 20px;
     font-weight: 300;
 }
 
-.panel-body {    
-    font-size: 22px;
+.panel-body {        
     color: #000;
     background-color: #ffffff;
     border-color: #ffffff !important;       
@@ -91,7 +124,7 @@ footer {
 }
 
 .author-attribution {
-    font-size: 12px;
+    font-size: 8px;
     padding-top: 30px;
 }
 
