@@ -36,7 +36,10 @@ angular.module('app').controller('Controller',
 			        latitude: 52.516002,
 			        longitude: 13.376587
 			    },
-			    zoom: 16
+			    zoom: 16,
+			    options : {
+			    	 scrollwheel: false
+		    	}
 			};
 			$scope.marker = {
 				id: 1,
