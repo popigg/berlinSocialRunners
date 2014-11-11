@@ -26,8 +26,8 @@ angular.module('app').controller('Controller',
 
 			$scope.menu = [
 				{ link: 'what', text: 'The Group' },
-				{ link: 'how', text: 'Meetings' },				
 				{ link: 'where', text: 'Find Us' },
+				{ link: 'how', text: 'Meetings' },								
 				{ link: 'enjoy', text: 'Have fun' },
 			];
 
