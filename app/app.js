@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app', ['ngRoute', 'google-maps'.ns()])
+angular.module('app', ['ngRoute', 'uiGmapgoogle-maps'])
   .run(['$anchorScroll', function($anchorScroll) {
     $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
   }]);
