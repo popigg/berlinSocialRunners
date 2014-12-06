@@ -7,15 +7,17 @@ angular.module('app', ['ngRoute', 'google-maps'.ns()])
 
 angular.module('app').config(
   [ '$routeProvider', 
-      function($routeProvider) {
+    '$locationProvider',
+      function($routeProvider, $locationProvider) {
         $routeProvider
           .when('/', {
               templateUrl: 'tpl/home.html',
-              controller: 'Controller'
-          })                  
-        .otherwise({
-          redirectTo: '/'
-        });        
+          })          
+          .otherwise({
+            redirectTo: '/'
+          });
+
+          $locationProvider.html5Mode(true);        
       }
   ]
 );

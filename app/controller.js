@@ -5,16 +5,11 @@ angular.module('app').controller('Controller',
 		'$location',
 		'$anchorScroll',		
 
-		function($scope, $location, $anchorScroll) {
+		function($scope, $location, $anchorScroll) {				
 
 			$scope.goTo = function(hash) {
-    			var newHash = hash;
-
-		        if ($location.hash() !== newHash) {		          
-		          $location.hash(hash);
-		        } else {
-		          $anchorScroll();
-		        }
+    			$location.hash(hash);
+      			$anchorScroll();
 			};
 
 			$scope.isActive = function (hash) {	
@@ -25,9 +20,9 @@ angular.module('app').controller('Controller',
 		    };
 
 			$scope.menu = [
-				{ link: 'what', text: 'The Group' },
+				{ link: 'what',  text: 'The Group' },
 				{ link: 'where', text: 'Find Us' },
-				{ link: 'how', text: 'Meetings' },								
+				{ link: 'how', 	 text: 'Meetings' },								
 				{ link: 'enjoy', text: 'Have fun' },
 			];
 
