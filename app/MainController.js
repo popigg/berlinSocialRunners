@@ -20,14 +20,15 @@ angular.module('app').controller('MainController',
 				$window.scrollTo( 0, top );
 			};
 
-			$scope.$on('$viewContentLoaded', function(event){								
-
-				scrollToElement($state.current.url);
+			$scope.$on('$viewContentLoaded', function(event){											
+				
+				if ($state.current.name !== 'start.home') {
+					scrollToElement($state.current.url.substr(1));	
+				}			
 			});										
 
 			$rootScope.$on("$stateChangeSuccess", function(event, toState, toParams, fromState, fromParams) {					
-
-					scrollToElement(toState.url);
+					scrollToElement(toState.url.substr(1));
 				}
 			);	
 

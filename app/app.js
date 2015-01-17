@@ -21,12 +21,11 @@ angular.module('app').config(
     '$stateProvider', 
     '$urlRouterProvider',      
 
-    function ($stateProvider, $urlRouterProvider) {            
+    function ($stateProvider, $urlRouterProvider) { 
 
       $stateProvider
-        .state('home', {
-            abstract: true,
-            url: '/',                                  
+        .state('start', {
+            abstract: true,                                              
             views: {
               navbar: { 
                 templateUrl: 'tpl/navbar.html',
@@ -38,20 +37,23 @@ angular.module('app').config(
               }
             },                       
         })
-        .state('home.what', {
-          url: 'what',                    
+        .state('start.home', {
+          url: '/',                    
+        })
+        .state('start.what', {
+          url: '/what',                    
         }) 
-        .state('home.where', {
-          url: 'where',        
+        .state('start.where', {
+          url: '/where',        
         })
-        .state('home.how', {
-          url: 'how',          
+        .state('start.how', {
+          url: '/how',          
         })
-        .state('home.enjoy', {
-          url: 'enjoy',          
+        .state('start.enjoy', {
+          url: '/enjoy',          
         })      
 
-        // The usual code to catch any url, but instead of a string ("/notfound") we use a function
+    // The usual code to catch any url, but instead of a string ("/notfound") we use a function
     // which receives $injector and $location.
     // We could check which URL the user wanted using $location but in this case we are going
     // to simply send them to the error state.
@@ -59,7 +61,7 @@ angular.module('app').config(
 
     $urlRouterProvider.otherwise(function ($injector, $location) {
       $injector.invoke(['$state', function ( $state ) {
-        $state.transitionTo( 'home.what' );
+        $state.transitionTo( 'start.home' );
       }]);
       return true;
     });
