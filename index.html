@@ -10,19 +10,21 @@
         <link href="img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
         <!--  bootstrap -->    
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
 
         <!-- my styles -->
         <link rel="stylesheet" type="text/css" href="css/style.css"> 
 
-        <base href="/">           
+        <base href="/">
     </head>
 
-    <body data-ng-controller="Controller" data-ng-view>    
+    <body>   
+        <div ui-view="navbar"></div>
+        <div ui-view="mainView"></div>        
 
         <!-- Scripts -->      
         <script src="angular/angular.min.js"></script>
-        <script src="angular-route/angular-route.min.js"></script>
+        <script src="angular-ui-router/release/angular-ui-router.min.js"></script>
         <script src="lodash/dist/lodash.min.js"></script>        
         <script src="angular-google-maps/dist/angular-google-maps.min.js"></script>
 
@@ -30,7 +32,7 @@
 
         <!-- my scripts -->
         <script type="text/javascript" src="app.js"></script>
-        <script type="text/javascript" src="controller.js"></script>
-            
+        <script type="text/javascript" src="MainController.js"></script>
+        <script type="text/javascript" src="navbar/NavbarController.js"></script>                        
     </body>
 </html>

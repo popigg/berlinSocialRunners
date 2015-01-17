@@ -1,0 +1,12 @@
+<!-- navbar.html -->
+
+<header class="container-fluid">	
+    <div class="navbar-default navbar-fixed-top col-xs-12" role="navigation">                    
+        <ul class="nav navbar-nav">
+            <li ng-repeat="m in menu" >
+            	<a ui-sref="home.{{ m.link }}" class="col-md-12 col-sm-12 col-xs-3" ui-sref-active="active">{{ m.text }}</a>
+        	</li>
+        </ul>        
+    </div>
+    <img src="img/index/BerlinSocialRunnersCover4.png" class="img-responsive header-img">          
+</header>
