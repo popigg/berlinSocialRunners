@@ -18,7 +18,7 @@ app.set('view cache', false);
 
 swig.setDefaults({ cache: false });
 
-app.get('/', function(req, res){
+app.get('/*', function(req, res){
   res.render('index', { });
 });
 
