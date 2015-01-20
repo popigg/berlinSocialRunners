@@ -16,7 +16,7 @@ angular.module('app').controller('MainController',
 				Element.prototype.documentOffsetTop = function () {
 					return this.offsetTop + ( this.offsetParent ? this.offsetParent.documentOffsetTop() : 0 );
 				};
-				var top = $document[0].getElementById(elem).documentOffsetTop() - ($window.innerHeight / 11 );				
+				var top = $document[0].getElementById(elem).documentOffsetTop() - ($window.innerHeight / 9 );				
 				$window.scrollTo( 0, top );
 			};
 
