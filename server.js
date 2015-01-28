@@ -6,9 +6,9 @@ var swig 	= require('swig');
 
 
 app.engine('html', swig.renderFile);
-app.use(express.static( __dirname + '/assets', { maxAge: 86400000 /* 1d */ } ));
-app.use(express.static( __dirname + '/bower_components'));
-app.use(express.static( __dirname + '/app'));
+app.use(express.static( __dirname + '/assets', { maxAge: 31556926000 /* 1year */ } ));
+app.use(express.static( __dirname + '/bower_components', { maxAge: 31556926000 /* 1year */ } ));
+app.use(express.static( __dirname + '/app', { maxAge: 31556926000 /* 1year */ }));
 
 
 app.set('view engine', 'html');
