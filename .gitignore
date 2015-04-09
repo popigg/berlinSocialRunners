@@ -1,7 +1,4 @@
 .DS_Store
-.htaccess
-node_modules
-bower_components
-img/memories
-js/*.min.js
-css/*.min.css
+.idea/
+node_modules/
+bower_components/
