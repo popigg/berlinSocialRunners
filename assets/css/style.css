@@ -8,9 +8,8 @@
     .panel-body {
         font-size: 1.4em;
     }
-    .navbar-nav {
-        margin-top: 0px;
-        margin-bottom: 0px;
+    .navbar-default {        
+        margin-top: 0;
     }
 }
 
@@ -61,10 +60,11 @@ h2 {
 }
 
 .header-img {
-    width: 1900px;    
+    width: 1900px;
+    margin-top: 50px;   
 }
 
-.navbar-default .navbar-collapse {
+.navbar-default {
     background-color: #ffffff;    
 }
 
@@ -124,7 +124,7 @@ h2 {
 
 footer {    
     padding-left: 40px;
-    margin-top: 20px;    
+    margin-top: 60px;    
 }
 
 .author-attribution {
