@@ -15,7 +15,7 @@
 
             $stateProvider
                 .state('start', {
-                    abstract: true,                                              
+                    abstract: true,                                                                                
                     views: {
                         navbar: {                             
                             controller:     'NavbarController',                
@@ -46,6 +46,6 @@
                 })
                 .state('start.enjoy', {
                     url: '/enjoy',          
-                })   
+                });   
         }
 })();
