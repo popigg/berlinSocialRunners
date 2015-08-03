@@ -68,6 +68,17 @@ h2 {
     background-color: #ffffff;    
 }
 
+.fade {
+    opacity: 0;
+
+    -webkit-transition:all linear 1s;
+    transition:all linear 1s;
+}
+
+.fade.active{
+  opacity: 1;
+}
+
 .container-fluid {
     padding-left: 0px !important;
     padding-right: 0px !important;

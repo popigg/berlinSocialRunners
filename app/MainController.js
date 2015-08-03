@@ -5,31 +5,47 @@
         .module('app')
         .controller('MainController', MainController);
 
-        MainController.$inject = ['$document', '$rootScope', '$scope', '$state', '$window'];
+        MainController.$inject = [        	
+        	'$document', 
+        	'$rootScope', 
+        	'$scope', 
+        	'$state',
+        	'$timeout',        	
+        	'SmoothScrollService', 
+        	'SmoothScrollServiceUtils'
+    	];
 
     /* @ngInject */
-    function MainController($document, $rootScope, $scope, $state, $window) {
+    function MainController(    	
+    	$document, 
+    	$rootScope, 
+    	$scope, 
+    	$state, 
+    	$timeout,   	
+    	SmoothScrollService, 
+    	SmoothScrollServiceUtils
+    	) {
+
         /*jshint validthis: true */
-        var vm = this;                		
+        var vm = this;
+
+        $timeout(function(){
+        	vm.mainView = 'active'             
+        }, 300);
+        
 		
 		$scope.$on('$viewContentLoaded', function(event){							
 			if ($state.current.name !== 'start.home') {
-				scrollToElement($state.current.url.substr(1));	
+				var distance = SmoothScrollServiceUtils.calculateScrollingDistance($state.current.url.substr(1));							
+				SmoothScrollService.scrollTo(distance - 80, 1000);				
 			}			
 		});
 
-		$rootScope.$on("$stateChangeSuccess", function(event, toState, toParams, fromState, fromParams) {					
-				scrollToElement(toState.url.substr(1));
-			}
-		);		
+		$rootScope.$on("$stateChangeSuccess", function(event, toState, toParams, fromState, fromParams) {																	
+				var distance = SmoothScrollServiceUtils.calculateScrollingDistance(toState.url.substr(1));				
 
-		var scrollToElement = function (elem) {
-			Element.prototype.documentOffsetTop = function () {
-				return this.offsetTop + ( this.offsetParent ? this.offsetParent.documentOffsetTop() : 0 );
-			};
-			var top = $document[0].getElementById(elem).documentOffsetTop() - ($window.innerHeight / 9 );				
-			$window.scrollTo( 0, top );
-		};		
-        
+				SmoothScrollService.scrollTo(distance, 1000);
+			}
+		);				        
     }
 })();
